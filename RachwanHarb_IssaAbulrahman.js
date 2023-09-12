@@ -16,3 +16,19 @@ switch(numberOfKeys) {
     default:
         alert("we need to swim a little bit more!"); // eveyting between 0 and 30000 will display "we need to swim a little bit more!"
 }
+
+// Ex 2
+// Let's say we have this unsorted array [5, 3, 7, 2, 4, 100, -8]
+
+var array = [5, 3, 7, 2, 3, 4, 100, -8]; // the array we have
+var minimum = array[0], maximum = array[0]; // let's assume that the first number is the min and the max and we will compare them with other number
+
+for(let i=1; i < array.length; i ++) { // will loop on the numbers of the array to do 2 checks
+    if(array[i] < minimum) { // if the number less than the minimum
+        minimum = array[i]; // will change the minimun into the new number
+    } else if (array[i] > maximum){ // if the number less than the minimum
+        maximum = array[i];
+    }
+}
+
+alert("min: " + minimum + ", max: " + maximum); // So will alert "min: -8, max: 100"
