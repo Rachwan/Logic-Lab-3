@@ -9,10 +9,10 @@ switch(numberOfKeys) {
         alert("we sank together");
         break; // will break or stop the switch case if the numberOfKeys is 0
     
-    case 30000: // we have the case of 30000 or more and the output will be "we made it"
+    case 30000: // we have the case of 30000 the output will be "we made it"
         alert("we made it");
-        break; // will break or stop the switch case if the numberOfKeys 30000 or more
+        break; // will break or stop the switch case if the numberOfKeys 30000
 
     default:
-        alert("we need to swim a little bit more!"); // this is the default if the number between 0 and 30000
+        alert("we need to swim a little bit more!"); // eveyting between 0 and 30000 will display "we need to swim a little bit more!"
 }
